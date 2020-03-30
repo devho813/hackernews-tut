@@ -1,12 +1,8 @@
-import React from "react";
-import Stories from "./components/Stories";
+import React from 'react';
+import Stories from './components/Stories';
 
 function App() {
-  return (
-    <div>
-      <Stories />
-    </div>
-  );
+  return <Stories />;
 }
 
 export default App;

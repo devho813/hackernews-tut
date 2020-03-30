@@ -1,10 +1,17 @@
-import React from "react";
-import useStories from "../hooks/useStories";
+import React from 'react';
+import useStories from '../hooks/useStories';
+import Story from './Story';
 
 function Stories() {
-  const { storyIds, story } = useStories();
+  const { storyIds } = useStories();
 
-  return <p>{JSON.stringify(story)}</p>;
+  return (
+    <>
+      {storyIds.map(storyId => (
+        <Story key={storyId} storyId={storyId} />
+      ))}
+    </>
+  );
 }
 
 export default Stories;
