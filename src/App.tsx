@@ -1,7 +1,12 @@
 import React from "react";
+import Stories from "./components/Stories";
 
 function App() {
-  return <p>hello</p>;
+  return (
+    <div>
+      <Stories />
+    </div>
+  );
 }
 
 export default App;
